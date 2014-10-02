@@ -23,8 +23,12 @@
 		
 		<label for='symInclude'>Include symbols?</label>
 		<input type='checkbox' name='symInclude' id='symInclude'><br>
-
 	</form>
+	<br>
+	<br>
+	<?php 
+		print_r($newPassword); 
+	?>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
