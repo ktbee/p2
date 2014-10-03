@@ -1,4 +1,4 @@
-$wordList = Array(
+$wordListTest = Array(
 A
 a
 aback

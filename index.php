@@ -16,18 +16,20 @@
 
 	<form method='POST' action='index.php'>
 		<label for='numWord'>Number of words you want</label>
-		<input type='number' name='numWord' id='numWord'><br>
+		<input type='number' name='numWord' id='numWord' max='9' min='1'><br>
 		
 		<label for='numInclude'>Include numbers in the password?</label>
 		<input type='checkbox' name='numInclude' id='numInclude'><br>
 		
 		<label for='symInclude'>Include symbols?</label>
 		<input type='checkbox' name='symInclude' id='symInclude'><br>
+
+		<input type='submit'>
 	</form>
 	<br>
 	<br>
 	<?php 
-		print_r($newPassword); 
+		
 	?>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

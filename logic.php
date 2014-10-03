@@ -16,7 +16,8 @@
 			'Dutch'
 		);
 
-	$numWords = 4;
+	 
+	$numWords = $_POST['numWord'] - 1;
 	$newPassword = Array();
 
 	for($i=0; $i<=$numWords; $i++){
@@ -24,4 +25,12 @@
 		$newWord = $wordList[$wordPosition];
 		array_push($newPassword, $newWord);
 	}
+
+
+	for($i = 0, $size = count($newPassword); $i < $size; $i++){
+			echo $newPassword[$i].'-';
+	}
+
+
+
 
