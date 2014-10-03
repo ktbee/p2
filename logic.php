@@ -49,12 +49,13 @@
 	$symPosition = array_rand($symList);
 	$randSym = $symList[$symPosition];
 
+	$randNum = rand(0,9);
+
 	for($i = 0, $size = count($newPassword) - 1; $i < $size; $i++){
 			echo $newPassword[$i];
 	}
 
 	if ($numInclude == 'on'){
-		$randNum = rand(0,9);
 		echo '-'.$randNum;
 	}
 
