@@ -1,0 +1,23 @@
+#output {
+	/*height: 2.5em; */
+	padding: .5em;
+	font-size: 2em;
+	font-weight: bold;
+	background-color: gainsboro;
+	color: green;
+	max-width: 50%;
+}
+
+form {
+	max-width: 50%;
+}
+
+.container {
+	border: 1px solid gainsboro;
+	margin: 3em;
+	padding: 1em;
+}
+
+img {
+	max-width: 500px;
+}

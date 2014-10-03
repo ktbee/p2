@@ -1,35 +1,7 @@
 <?php
 	
-	//require 'wordList.php';
-	$wordList = Array(
-			'duplicity',
-			'durability',
-			'durable',
-			'duration',
-			'duress',
-			'during',
-			'dusk',
-			'dust',
-			'jacket',
-			'dustpan',
-			'dusty',
-			'Dutch'
-		);
-
-	$symList = Array(
-			'!',
-			'@',
-			'#',
-			'$',
-			'%',
-			'^',
-			'&',
-			'*',
-			'~'
-		);
-
-
-	 
+	require 'wordList.php';
+		 
 	$numWords = $_POST['numWord'] - 1;
 	$newPassword = Array();
 	$numInclude = $_POST['numInclude'];
@@ -42,26 +14,13 @@
 		array_push($newPassword, "-");
 	}
 
-	//foreach( $newPassword as $word){
-	//	echo $word;
-	//}
 
 	$symPosition = array_rand($symList);
 	$randSym = $symList[$symPosition];
 
 	$randNum = rand(0,9);
 
-	for($i = 0, $size = count($newPassword) - 1; $i < $size; $i++){
-			echo $newPassword[$i];
-	}
-
-	if ($numInclude == 'on'){
-		echo '-'.$randNum;
-	}
-
-	if ($symInclude == 'on'){
-		echo '-'.$randSym;
-	}
+	
 
 
 
